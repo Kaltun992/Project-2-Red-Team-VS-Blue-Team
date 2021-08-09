@@ -28,17 +28,26 @@ Beats and commands used to set up Kibana.
 **Filebeat**
 
 > filebeat modules enable apache
+
 > filebeat setup
+
 > Metricbeat
+
 > metricbeat modules enable apache
+
 > metricbeat setup
+
 > Packetbeat
 
 **packetbeat setup**
 Restarting to ensure they working and operational
 
 > systemctl restart filebeat
+
+
 > systemctl restart metricbeat
+
+
 > systemctl restart packetbeat
 
 ### Red Team Instructions
