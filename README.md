@@ -50,7 +50,7 @@ Restarting to ensure they working and operational
 
 > systemctl restart packetbeat
 
-### Red Team Instructions
+#### Red Team Instructions
 
 - Discover the IP address of the Linux web server.
 - Locate the hidden directory on the web server.
@@ -63,7 +63,7 @@ Restarting to ensure they working and operational
 
 ### **Blue Team**
 
-### Blue Team Instructions
+#### Blue Team Instructions
 
 Using Kibana to analyse logs taken during the Red Team attack. The data will be used to develop ideas for new alerts that can improve monitoring.
 
@@ -73,7 +73,7 @@ Even though I already know what I did to exploit the target, analysing logs is s
 - How stealthy or detectable your tactics are.
 - Which kinds of alarms and alerts SOC and Incident Response professionals can use to spot these types of attacks while they occur, rather than after.
 
-### Creating Dashboards
+#### Creating Dashboards
 
 Using the Dashboards I added the following reports:
 
