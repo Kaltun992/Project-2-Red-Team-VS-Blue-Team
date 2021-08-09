@@ -8,7 +8,7 @@ As the red team I attacked a vulnerable VM within our environment, ultimately ga
 
 Then I interpreted the log data to suggest mitigation strategies for each exploit that I successfully performed.
 
-## Project Objectives
+### Project Objectives
 
 This project will apply the knowledge and use of the following skills and tools:
 
@@ -19,30 +19,29 @@ This project will apply the knowledge and use of the following skills and tools:
 
 The technical skills of this project were performed in a lab environment located in Windows Azure Lab Services.
 
-## **Red Team**
+### **Red Team**
 
 Before performing the attack it was essential to setup the backend logs to capture the attack data.
 
-Click hear to see beats and commands used to set up Kibana.
+Beats and commands used to set up Kibana.
 
-Filebeat
+**Filebeat**
 
-filebeat modules enable apache
-filebeat setup
-Metricbeat
+> filebeat modules enable apache
+> filebeat setup
+> Metricbeat
+> metricbeat modules enable apache
+> metricbeat setup
+> Packetbeat
 
-metricbeat modules enable apache
-metricbeat setup
-Packetbeat
-
-packetbeat setup
+**packetbeat setup**
 Restarting to ensure they working and operational
 
-systemctl restart filebeat
-systemctl restart metricbeat
-systemctl restart packetbeat
+> systemctl restart filebeat
+> systemctl restart metricbeat
+> systemctl restart packetbeat
 
-## Red Team Instructions
+### Red Team Instructions
 
 - Discover the IP address of the Linux web server.
 - Locate the hidden directory on the web server.
@@ -53,9 +52,9 @@ systemctl restart packetbeat
 - Execute payload to open up a meterpreter session.
 - Find and capture the flag.
 
-## **Blue Team**
+### **Blue Team**
 
-## Blue Team Instructions
+### Blue Team Instructions
 
 Using Kibana to analyse logs taken during the Red Team attack. The data will be used to develop ideas for new alerts that can improve monitoring.
 
@@ -65,7 +64,7 @@ Even though I already know what I did to exploit the target, analysing logs is s
 - How stealthy or detectable your tactics are.
 - Which kinds of alarms and alerts SOC and Incident Response professionals can use to spot these types of attacks while they occur, rather than after.
 
-## Creating Dashboards
+### Creating Dashboards
 
 Using the Dashboards I added the following reports:
 
